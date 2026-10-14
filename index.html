@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>SW 1</title>
+    <style>
+    input[type="text"] {
+        padding: 12px;      
+        font-size: 16px;    
+        width: 250px;       
+        margin-bottom: 15px; 
+        display: inline-block;
+        text-align: center;    
+    }
+
+    button {
+        padding: 12px 24px;  
+        font-size: 16px;  
+        width: 250px;    
+        margin-top: 10px;    
+    }
+    .form-btn:hover {
+            background-color: #303439; 
+    }
+    </style>
+</head>
+<body style="background-color: #303439; color: black; text-align: center; padding: 10%;">
+    <div style="display: inline-block; text-align: left; background-color: #ffffff; padding: 3%; border-radius: 8px;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border: 1px solid #e0e0e0;">
+    <form style="text-align: center; padding: 2%;">
+        <h1>Welcome to the Gossip Club Checker!</h1><br>
+        <h3>Input your first and last name to check if you have qualified for the OBMC Gossip Club:</h3>
+        <input type="text" id="first_name" placeholder="Enter your first name"><br>
+        <input type="text" id="last_name" placeholder="Enter your last name"><br>
+        <input type="button" py-click="check_student" value="Search" style="width: 250px; padding: 12px 24px;  
+        font-size: 16px;">
+    </form>
+    </div><br>
+    <div id="output" style="color: white; padding: 3%; font-size: 24px;"></div>
+    <py-script src="main.py"></py-script>  
+</body>
+</html>
